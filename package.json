@@ -1,0 +1,18 @@
+{
+  "name": "docx-to-html",
+  "private": true,
+  "version": "0.0.0",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "mammoth": "^1.4.21",
+    "notyf": "^3.10.0"
+  }
+}

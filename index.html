@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>docx-to-html</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>docx-to-html</h1>
+      </header>
+      <div class="container">
+        <div class="upload-container">
+          <input
+            style="display: none"
+            type="file"
+            id="file-upload"
+            accept=".docx"
+            hidden
+          />
+          <button
+            type="button"
+            onclick="document.getElementById('file-upload').click()"
+          >
+            Upload .docx file
+          </button>
+        </div>
+
+        <div class="output-container" data-has-output="false">
+          <div class="toolbar">
+            <p>Edit mode: <span id="edit-mode-state">Off</span></p>
+            <button id="btn-edit" type="button" title="Toggle edit">
+              <span class="sr-only">toggle edit</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-edit"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1"
+                ></path>
+                <path
+                  d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z"
+                ></path>
+                <path d="M16 5l3 3"></path>
+              </svg>
+            </button>
+            <button id="btn-copy" type="button" title="Copy output">
+              <span class="sr-only">copy output</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-clipboard"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                  d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2"
+                ></path>
+                <rect x="9" y="3" width="6" height="4" rx="2"></rect>
+              </svg>
+            </button>
+          </div>
+          <div id="output" contenteditable="false"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
