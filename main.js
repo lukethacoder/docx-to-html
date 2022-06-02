@@ -1,4 +1,4 @@
-import mammoth from 'mammoth/mammoth.browser'
+import { convertToHtml } from 'mammoth/mammoth.browser'
 import { Notyf } from 'notyf'
 
 import 'notyf/notyf.min.css'
@@ -64,7 +64,7 @@ async function handleFileSelect(e) {
 
   readFileInputEventAsArrayBuffer(e, async function (arrayBuffer) {
     try {
-      const output = await mammoth.convertToHtml({ arrayBuffer: arrayBuffer })
+      const output = await convertToHtml({ arrayBuffer: arrayBuffer })
       displayResult(output.value)
       outputContainer.dataset.hasOutput = true
     } catch (error) {
