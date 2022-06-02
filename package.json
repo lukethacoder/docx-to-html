@@ -9,10 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^2.9.9"
+    "vite": "2.9.9"
   },
   "dependencies": {
-    "mammoth": "^1.4.21",
-    "notyf": "^3.10.0"
+    "mammoth": "1.4.21",
+    "notyf": "3.10.0"
   }
 }
