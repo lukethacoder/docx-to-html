@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 :root {
-  --theme-primary: #8affc1;
+  --theme-primary: #3fef8e;
   --theme-bg-default: #fdfdfd;
   --theme-fg-default: #222222;
   --theme-font-uno: 'Lato', sans-serif;
@@ -16,11 +16,27 @@ body {
   margin: 0;
 }
 
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0;
+}
+
 h1 {
   text-align: center;
+  margin: 48px auto 8px;
   text-decoration-color: var(--theme-primary);
   text-decoration-style: solid;
   text-decoration-line: underline;
+}
+h2 {
+  font-size: 16px;
+  margin: 0 auto 24px;
+  text-align: center;
 }
 
 a:focus-visible,
@@ -87,7 +103,6 @@ a:focus-visible {
   top: 0;
   justify-content: flex-end;
   gap: 8px;
-  overflow: hidden;
   align-items: center;
   margin: 0 auto 4px;
   background-color: var(--theme-bg-default);
@@ -122,6 +137,14 @@ a:focus-visible {
   margin: 0 auto;
   flex-direction: column;
 }
+
+footer {
+  text-align: center;
+}
+footer a {
+  color: var(--theme-primary);
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -131,13 +154,4 @@ a:focus-visible {
   margin: -1px;
   overflow: hidden;
   padding: 0;
-}
-
-.col-6 {
-  width: 100%;
-}
-@media (min-width: 767px) {
-  .col-6 {
-    width: 50%;
-  }
 }
