@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "2.9.9"
+    "vite": "2.9.10"
   },
   "dependencies": {
     "mammoth": "1.4.21",
