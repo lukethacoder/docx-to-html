@@ -222,10 +222,10 @@ lop@^0.4.1:
     option "~0.2.1"
     underscore "^1.13.1"
 
-mammoth@1.4.21:
-  version "1.4.21"
-  resolved "https://registry.yarnpkg.com/mammoth/-/mammoth-1.4.21.tgz#7eb89d80e396181cfa775b7fc34dcad9aa882c46"
-  integrity sha512-znix1/i7LtfVMAe6mmrxJSoN1HmTASJ48I+PofSHs4vPKCuPF1DDOCVeMgZTYpitzjWTWs9Xhxxi2LBbHpmovg==
+mammoth@1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/mammoth/-/mammoth-1.5.1.tgz#ef979dfc9ea411e5f2841a989f5ba70e115f0536"
+  integrity sha512-7ZioZBf/1HjYrm1qZJOO+DD+rYxLvwrHS+HVOwW89hwIp+r6ZqJ/Eq2rXSS+8ezZ3/DuW6FUUp2Dfz6e7B2pBQ==
   dependencies:
     argparse "~1.0.3"
     bluebird "~3.4.0"
